@@ -155,7 +155,7 @@ public class BuildDataStructureTask extends SwingWorker<Integer, Integer>{
     private void loadJournalAbbrFile() {
 
         abbrevList = new ArrayList<>();
-            File file = new File(getClass().getResource("abbrevSet.txt").getFile());
+            File file = new File(getClass().getClassLoader().getResource("abbrevSet.txt").getFile());
 
             try (Scanner scanner = new Scanner(file)) {
 

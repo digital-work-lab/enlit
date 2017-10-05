@@ -1,16 +1,13 @@
 package tasks;
 
-import functionality.MainWindow;
 import functionality.DataHolder;
+import functionality.MainWindow;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
 
-import javax.annotation.Resources;
 import javax.swing.*;
-import java.io.*;
 import java.util.List;
-import java.util.Properties;
 import java.util.prefs.Preferences;
 
 /**
@@ -35,17 +32,18 @@ public class RunGrobidTask extends SwingWorker<Void, Integer> {
     @Override
     protected Void doInBackground() throws Exception {
 
+        DataHolder dataHolder = new DataHolder();
+
         publish(0);
         label.setText("Initializing...");
 
             Preferences preferences = Preferences.userNodeForPackage(MainWindow.class);
 
-            DataHolder.pGrobidHome = preferences.get("pGrobidHome", "");
-            DataHolder.pGrobidProperties = preferences.get("pGrobidProperties", "");
+        dataHolder.setpGrobidHome(preferences.get("pGrobidHome", ""));
+        dataHolder.setpGrobidProperties(preferences.get("pGrobidProperties", ""));
 
-            System.out.println(DataHolder.pGrobidHome +" : " + DataHolder.pGrobidProperties );
 
-            if(DataHolder.pGrobidHome == null||  DataHolder.pGrobidProperties == null) {
+        if(DataHolder.pGrobidHome == null||  DataHolder.pGrobidProperties == null) {
 
                 if(DataHolder.pGrobidHome == null)
                 {
@@ -64,16 +62,14 @@ public class RunGrobidTask extends SwingWorker<Void, Integer> {
             }
 
 
-            MockContext.setInitialContext(DataHolder.pGrobidHome, DataHolder.pGrobidProperties);
-            GrobidProperties.getInstance();
 
-            DataHolder.engine = GrobidFactory.getInstance().createEngine();
+        MockContext.setInitialContext(dataHolder.getpGrobidHome(), dataHolder.getpGrobidProperties());
+        GrobidProperties.getInstance();
 
-            try {
-                MockContext.destroyInitialContext();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        DataHolder.engine = GrobidFactory.getInstance().createEngine();
+
+        MockContext.destroyInitialContext();
+
         publish(100);
         return null;
     }
