@@ -57,7 +57,7 @@ public class MainWindow implements ActionListener {
 		JFrame.setDefaultLookAndFeelDecorated(true);
 
 		try {
-			frame.setIconImage(ImageIO.read(new File("src\\main\\logo.png")));
+			frame.setIconImage(ImageIO.read(getClass().getClassLoader().getResourceAsStream("logo.png")));
 		}
 		catch (IOException exc) {
 			exc.printStackTrace();
