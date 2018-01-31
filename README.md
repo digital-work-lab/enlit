@@ -1,4 +1,4 @@
-# ![ENLIT logo](https://github.com/WinforUniRegensburg/enlit/blob/master/resources/logo.png) ENLIT (Exploring New LITerature)
+# ![ENLIT logo](/src/main/resources/logo.png) ENLIT (Exploring New LITerature)
 
 ENLIT is a tool that supports scholars in exploring new literature:
 - It makes **backward searches more efficient** by extracting the references from a literature corpus (set of PDFs) and providing a list without duplicates. It also provides statistics on journals and authors that are cited frequently by the given literature corpus.
