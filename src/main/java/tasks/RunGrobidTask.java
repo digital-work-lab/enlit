@@ -61,12 +61,11 @@ try {
     }
 
 
-    GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList("C:/Users/Philip/AndroidStudioProjects/copying/grobid/grobid-home"));
+    GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(DataHolder.pGrobidHome));
     GrobidProperties.getInstance(grobidHomeFinder);
     DataHolder.engine = GrobidFactory.getInstance().createEngine();
 
     System.out.println(">>>>>>>> GROBID_HOME=" + GrobidProperties.get_GROBID_HOME_PATH());
-    Thread.sleep(10000);
     publish(100);
 }
 catch(Exception e)
