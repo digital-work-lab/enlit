@@ -1,0 +1,12 @@
+02 Dez 2018 16:04.58 [INFO ] LibraryLoader             - Loading external native CRF library
+02 Dez 2018 16:04.58 [INFO ] LibraryLoader             - Loading Wapiti native library...
+02 Dez 2018 16:04.58 [INFO ] LibraryLoader             - Library crfpp loaded
+02 Dez 2018 16:04.58 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\header\model.wapiti (size: 36094028)
+02 Dez 2018 16:05.11 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\citation\model.wapiti (size: 12972361)
+02 Dez 2018 16:05.14 [INFO ] Lexicon                   - Initiating dictionary
+02 Dez 2018 16:05.14 [INFO ] Lexicon                   - End of Initialization of dictionary
+02 Dez 2018 16:05.14 [INFO ] Lexicon                   - Initiating names
+02 Dez 2018 16:05.14 [INFO ] Lexicon                   - End of initialization of names
+02 Dez 2018 16:05.15 [INFO ] Lexicon                   - Initiating country codes
+02 Dez 2018 16:05.15 [INFO ] Lexicon                   - End of initialization of country codes
+02 Dez 2018 16:05.16 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\reference-segmenter\model.wapiti (size: 2002440)

@@ -1,0 +1,24 @@
+01 Dez 2018 13:26.27 [INFO ] LibraryLoader             - Loading external native CRF library
+01 Dez 2018 13:26.27 [INFO ] LibraryLoader             - Loading Wapiti native library...
+01 Dez 2018 13:26.27 [INFO ] LibraryLoader             - Library crfpp loaded
+01 Dez 2018 13:26.27 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\header\model.wapiti (size: 36094028)
+01 Dez 2018 13:26.35 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\citation\model.wapiti (size: 12972361)
+01 Dez 2018 13:26.37 [INFO ] Lexicon                   - Initiating dictionary
+01 Dez 2018 13:26.37 [INFO ] Lexicon                   - End of Initialization of dictionary
+01 Dez 2018 13:26.37 [INFO ] Lexicon                   - Initiating names
+01 Dez 2018 13:26.37 [INFO ] Lexicon                   - End of initialization of names
+01 Dez 2018 13:26.38 [INFO ] Lexicon                   - Initiating country codes
+01 Dez 2018 13:26.38 [INFO ] Lexicon                   - End of initialization of country codes
+01 Dez 2018 13:26.38 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\reference-segmenter\model.wapiti (size: 2002440)
+01 Dez 2018 13:42.46 [INFO ] LibraryLoader             - Loading external native CRF library
+01 Dez 2018 13:42.46 [INFO ] LibraryLoader             - Loading Wapiti native library...
+01 Dez 2018 13:42.46 [INFO ] LibraryLoader             - Library crfpp loaded
+01 Dez 2018 13:42.47 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\header\model.wapiti (size: 36094028)
+01 Dez 2018 13:42.55 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\citation\model.wapiti (size: 12972361)
+01 Dez 2018 13:42.58 [INFO ] Lexicon                   - Initiating dictionary
+01 Dez 2018 13:42.58 [INFO ] Lexicon                   - End of Initialization of dictionary
+01 Dez 2018 13:42.58 [INFO ] Lexicon                   - Initiating names
+01 Dez 2018 13:42.58 [INFO ] Lexicon                   - End of initialization of names
+01 Dez 2018 13:42.59 [INFO ] Lexicon                   - Initiating country codes
+01 Dez 2018 13:42.59 [INFO ] Lexicon                   - End of initialization of country codes
+01 Dez 2018 13:42.59 [INFO ] WapitiModel               - Loading model: C:\Users\Philip\Desktop\backward_search_tool\GROBID\grobid-home\models\reference-segmenter\model.wapiti (size: 2002440)

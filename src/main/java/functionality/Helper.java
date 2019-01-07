@@ -1,26 +1,11 @@
 package functionality;
 
-import model.PDFPaper;
 import model.Paper;
-import model.ReferencedPaper;
 import org.apache.commons.lang3.StringUtils;
-import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.data.Person;
-import org.grobid.core.engines.Engine;
-import org.grobid.core.engines.config.GrobidAnalysisConfig;
-import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.factory.GrobidFactory;
-import org.grobid.core.mock.MockContext;
-import org.grobid.core.utilities.GrobidProperties;
-import org.omg.PortableServer.THREAD_POLICY_ID;
 
-import javax.swing.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.util.*;
+import java.util.List;
 
 /**
  * Cobat main class

@@ -50,18 +50,24 @@ public class BuildDataStructureTask extends SwingWorker<Integer, Integer>{
         loadJournalAbbrFile();
         for (File file : DataHolder.listFiles) {
 
+
             try {
 
                 BiblioItem bibItem = new BiblioItem();
 
                 try {
-                    String header = DataHolder.engine.processHeader(file.getAbsolutePath(), false,
+                    System.out.println(file.getAbsolutePath());
+
+                    String header = DataHolder.engine.processHeader(file.getAbsolutePath(), 1,
                             bibItem);
+                    System.out.println("check2");
+
                     if (header == null) {
                         DataHolder.listEmptyOrError.add(file.getAbsolutePath());
 
                     }
-                } catch (GrobidException e) {
+                } catch (Exception e) {
+                    e.printStackTrace();
                     DataHolder.listEmptyOrError.add(file.getAbsolutePath());
                 }
 
@@ -95,7 +101,7 @@ public class BuildDataStructureTask extends SwingWorker<Integer, Integer>{
                 Helper.checkNullValues(pdfPaper);
 
                 List<BibDataSet> listReferences = DataHolder.engine.processReferences(
-                        file, false);
+                        file, 1);
 
                 if (!listReferences.isEmpty()) {
                     List<ReferencedPaper> listReferencedPaper = new ArrayList<>();
@@ -174,6 +180,7 @@ public class BuildDataStructureTask extends SwingWorker<Integer, Integer>{
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
     }
 
     private void solveFieldValues(BibDataSet bd) {
