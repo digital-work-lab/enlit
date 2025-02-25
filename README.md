@@ -28,3 +28,7 @@ Import ENLIT as a Maven-project.
 ## License
 
 This project is licensed under the [MIT license](LICENSE.md), it is based on [GROBID](https://github.com/kermitt2/grobid) and uses [JabRef](https://github.com/JabRef/jabref) code.
+
+## Cite
+
+Wagner, G., Empl, P., & Schryen, G. (2020, May). Designing a novel strategy for exploring literature corpora. *Proceedings of the European Conference on Information Systems*. https://aisel.aisnet.org/ecis2020_rp/44/
